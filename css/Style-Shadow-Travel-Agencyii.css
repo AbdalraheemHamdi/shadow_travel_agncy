@@ -1,0 +1,1668 @@
+::selection{
+    color: #fff;
+    background-color: #2b4ac7;
+}
+body{
+    background-color: white;
+    height: 5250px;
+    font-family: 'Nunito', sans-serif;
+    /* user-select: none; */
+}
+
+                    /* medias */
+                    @media (min-width:1200px){
+                        body section.lab{
+                            display: block;
+                        }
+                        body section.ltl{
+                            display: none;
+                        }
+
+                    }
+                    @media (max-width:1199px){
+                        body {
+                            height: 100vh;
+                        }
+                        body section.lab{
+                            display: none;
+                        }
+                        body section.ltl{
+                            display: block;
+                        }
+                    }
+body section.ltl {
+    position: relative;
+    background-color: #09a6d0;
+    background-image: url("../images/backgrounds/first-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 40px; */
+    height: 100vh;
+    /* width: 100vw; */
+    /* overflow: hidden; */
+}
+body section.ltl section.container {
+    position: absolute;
+    /* background-color: #051f38; */
+    background-color: #051f38a7;;
+    color: #fff;
+    min-height: fit-content;
+    /* height: 100%; */
+    width: 80%;
+    padding: 20px;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    /* bottom: 50%;
+    transform: translateY(50%); */
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+body section.ltl section.container img{
+    /* display: none; */
+    /* position: absolute; */
+    width: 100%;
+    /* height: 50%; */
+    margin: 0;
+    border-radius: 20px;
+}
+@media (max-height:620px){
+    body section.ltl section.container {
+        /* width: 90%; */
+        background-image: url("../images/backgrounds/owl.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 100%; */
+        overflow: hidden;
+    }
+    body section.ltl section.container::after {
+        position: absolute;
+        content: "";
+        background-color: #000;
+        opacity: .4;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
+    body section.ltl section.container img{
+        /* height: 20%; */
+        display: none;
+    }
+    body section.ltl section.container p a{
+        color: #ae5d26;
+    }
+}
+body section.ltl section.container h2{
+    /* position: absolute; */
+    padding-top: 20px;
+    border-top-width: 3px;
+    border-top-color: aqua;
+    border-top-style: solid;
+    /* border-bottom-width: 3px; */
+}
+body section.ltl section.container p{
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+}
+body section.ltl section.container p.dev{
+    line-height: 35px;
+}
+body section.ltl section.container a{
+    color: #051f38;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+body section.ltl section.container {}
+header{
+    margin-top: -10px;
+    background-image: url("../images/backgrounds/first-image.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header-searchbox{
+    height: 50px;
+    width: 500px;
+    margin-top: 300px;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 60px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(160, 155, 155);
+    text-align: center;
+}
+.header-searchbox-search{
+    right: 30px;
+    height: 50px;
+    width: 70px;
+    margin-top: 300px;
+    background-color: rgb(0, 0, 0,0.3);
+    border: 0px;
+    border-radius: 60px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(160, 155, 155);
+    text-align: center;
+}
+
+.header-h1{
+    position: absolute;
+    top: 150px;
+    right: 350px;
+    font-size: 50px;
+    color: #fff;
+}
+.header-logo{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    /* background-color: transparent;
+    border-color: #fff; */
+    border-radius: 30px;
+    border: 2px double #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+    color:#fff;
+    font-size: 20px;
+}
+.header-langage{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    right: 0px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #fff;
+    border:2.5px dashed #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 12px;
+}
+.div-destination{
+    color: gray;
+    font-size: 25px;
+}
+.div-hr{
+    width: 200px;
+    border-color: gray;
+    border-style: solid;
+}
+
+                                                /*Start Of Valencia*/
+
+.div-destination-valencia{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    border: 0px solid gray;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+}
+.div-destination-valencia-image{
+    height: 250px;
+    width: 350px;
+}
+.div-destination-valencia > h2{
+    position: absolute;
+    color: rgb(0, 0, 0,0.8);
+    left: 10px;
+}
+.div-destination-Valencia-article{
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    top: 300px;
+    line-height: 23px;
+    white-space: nowrap;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0,0.7);
+}
+
+                                                /*Start Of Los Angeles*/
+
+.div-destination-Los-Angeles{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    border: 0px solid gray;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+}
+.div-destination-Los-Angeles-image{
+    height: 250px;
+    width: 350px;
+}
+.div-destination-Los-Angeles > h2{
+    position: absolute;
+    color: rgb(0, 0, 0,0.8);
+    left: 10px;
+}
+.div-destination-Los-Angeles-article{
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    top: 300px;
+    line-height: 23px;
+    white-space: nowrap;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0,0.7);
+}
+
+                                                /*Start Of Paris*/
+
+.div-destination-paris{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    border: 0px solid gray;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+}
+.div-destination-paris-image{
+    height: 250px;
+    width: 350px;
+}
+.div-destination-paris > h2{
+    position: absolute;
+    color: rgb(0, 0, 0,0.8);
+    left: 10px;
+}
+
+.div-destination-table{
+    padding: 15px;
+}
+.table-countries-destination{
+    position: relative; 
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    right: 0;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+}
+.table-countries-destination-side{
+    position: absolute;
+    height: 600px;
+    width: 25%;
+    background-color: rgb(128, 128, 128 , 0.5);
+}
+.table-countries-destination-side-header{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color:rgb(80, 80, 255);
+}
+.table-countries-destination-list-div{
+    position: absolute;
+    background-color: transparent;
+    height: 70%;
+    width: 100%;
+    top: 30%;
+}
+
+/*م تطبز فوق تاني*/
+
+.table-countries-destination-list-div-ul{
+    position: absolute;
+    background-color: transparent;
+    list-style: none;
+    text-align: left;
+    height: 400px;
+    width: 210px;
+    top: -16px;
+    padding-top: 20px;
+}
+
+/*anchors begin */
+
+.table-countries-destination-list-div-ul > a{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: transparent;
+    width: 225px;
+    color: #fff;
+    left: 0px;
+    padding-left: 20px;
+    
+}
+
+.table-countries-destination-list-div-ul > a:hover {
+    background-color: gray;
+    transition-duration: 0.3s;
+}
+
+.table-countries-destination-list-div-ul-a1{
+    position: absolute;
+    background-color: transparent;
+    top: 5px;
+    padding-top: 5px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a2{
+    position: absolute;
+    background-color: transparent;
+    top: 55px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a3{
+    position: absolute;
+    background-color: transparent;
+    top: 105px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a4{
+    position: absolute;
+    background-color: transparent;
+    top: 155px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a5{
+    position: absolute;
+    background-color: transparent;
+    top: 205px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a6{
+    position: absolute;
+    background-color: transparent;
+    top: 255px;
+    height: 40px;
+}
+.table-countries-destination-list-div-ul-a7{
+    position: absolute;
+    background-color: transparent;
+    top: 305px;
+    height: 40px;
+}
+.table-countries-destination-main{
+    position: absolute;
+    background-color:transparent;
+    height: 100%;
+    width: 75%;
+    right: 0%;
+}
+.table-countries-destination-main-BOX1{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 30px;
+    height: 50px;
+    width: 200px;
+    border: .1px solid gray;
+    border-radius: 30px;
+    left: 10px;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+.table-countries-destination-main-BOX2{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 30px;
+    height: 50px;
+    width: 200px;
+    border: .1px solid gray;
+    border-radius: 30px;
+    left: 250px;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+.table-countries-destination-main-BOX3{
+    position: absolute;
+    background-color: whitesmoke;
+    top: 30px;
+    height: 50px;
+    width: 200px;
+    border: .1px solid gray;
+    border-radius: 30px;
+    left: 500px;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+.table-countries-destination-main-BOX4{
+    position: absolute;
+    background-color: rgb(128, 128, 128 , 0.7);
+    top: 120px;
+    height: 50px;
+    width: 80px;
+    border: .1px solid rgb(128, 128, 128 , 0.7);
+    border-radius: 30px;
+    left: 300px;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 29px;
+    padding-top: 10px;
+}
+
+                                        /*start of season offers*/
+
+.season-offers-title{
+    color: blue;
+    font-size: 50px;
+    left: 30px;
+    text-align: center;
+}
+.season-offers-discription{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.season-offers-discription-topic{
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+
+.season-offers-main{
+    position: relative;
+    height: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+}
+.Maldives-Cover{
+    background-color: white;
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    width: 35%;
+    left:50px;
+}
+                                        /*start of maldives*/
+.Maldives-main{
+    position: absolute;
+    height:0%;
+    width: 35%;
+    top: -7%;
+    padding-top: 50%;
+    padding-bottom: 0%;
+    opacity: 1;
+
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.Maldives-main:hover{
+    height:100%;
+    width: 35%;
+    top: 0%;
+    padding-top: 0;
+    opacity: 1;
+}
+
+.maldives-image{
+    height: 100%;
+    width: 35%;
+
+}
+
+.Maldives-article{
+    text-align: justify;
+    height: 100%;
+    background-color: #09a6d0;
+    color: #fff;
+    position: absolute;
+    padding: 0 15px 0 20px;
+    font-size: 20px;
+    opacity: 0.8;
+    
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+
+}
+.WWW{
+    position: absolute;
+    background-color: #051f38;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 200px;
+    height: 500px;
+    width: 20%;
+}
+.Maldives-article:hover{
+    position: absolute;
+    text-align: justify;
+    height: 100%;
+    background-color: #09a6d0;
+    color: #fff;
+    opacity: .8;
+    padding: 0 15px 0 20px;
+    font-size: 20px;
+    /* opacity: 0; */
+}
+.Maldives-article h3{
+    font-size: 30px;
+    color: aqua;
+}
+.Maldives-paragraph{
+    color: #fff;
+}
+.Maldives-book{
+    position: absolute;
+    color: aqua;
+    border-radius: 30px;
+    border: 2px dashed #fff;
+    padding: 10px;
+    text-decoration: none;
+    bottom: 30px;
+    width: 27%;
+    right: 36.5%;
+   left: 36.5%;
+}
+                                        /* End Of Maldives */
+
+                                        /* Start Of Italy */
+.Italy-main{
+    background-color: blue;
+    height: 45%;
+    width: 25%;
+    right: 0%;
+    top: 0%;
+    position: absolute;
+}
+.Italy-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.Italy-article{
+    position: absolute;
+    height: 100%;
+    background-color: #ef640b;
+    color: darkred;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    
+    opacity: 0;
+    
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    
+}
+
+.Italy-article:hover{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    background-color: #683514;
+    color: #fff;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    opacity: .8;
+}
+
+.Italy-article h3{
+    font-size: 30px;
+    /* color: darkred; */
+    color: orangered;
+}
+.Italy-paragraph{
+    color: orange;
+}
+.Italy-book{
+    position: absolute;
+    color: orangered;
+    border-radius: 30px;
+    border: 2px dashed orange;
+    padding: 4% 8%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    bottom: 30px;
+    width: 30%;
+    right: 25%;
+    left: 25%;
+}
+                                        /* End Of Italy */
+
+                                        /* Start Of Doha */
+.Doha-Main{
+    background-color: blue;
+    height: 45%;
+    width: 25%;
+    right: 30%;
+    top: 0%;
+    position: absolute;
+}
+.Doha-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.Doha-article{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    background-color: #3b6196;
+    color: darkred;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    
+    opacity: 0;
+    
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.Doha-article:hover{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    /* background-color: #683514; */
+    background-color: #3b6196;
+    color: #fff;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    opacity: .8;
+}
+
+
+.Doha-article h3{
+    font-size: 30px;
+    /* color: darkred; */
+    /* color: orangered; */
+    color: #fded82;
+}
+.Doha-paragraph{
+    color: #f7bd80;
+}
+.Doha-book{
+    position: absolute;
+    /* color: orange; */
+    color: #fddb6c;
+    border-radius: 30px;
+    /* border: 2px dashed orangered; */
+    border: 2px dashed  #dfb995;
+    padding: 4% 8%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    bottom: 30px;
+    width: 30%;
+    right: 25%;
+    left: 25%;
+}
+
+
+                                        /* End Of Doha */
+
+                                        /* Start Of Antalya */
+.Antalya-Main{
+    background-color: blue;
+    height: 45%;
+    width: 25%;
+    right: 0%;
+    bottom: 0%;
+    position: absolute;
+}
+
+.Antalya-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.Antalya-article{
+    position: absolute;
+    height: 100%;
+    background-color: #45afc0;
+    color: #144754;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    
+    opacity: 0;
+    
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.Antalya-article:hover{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    background-color: #45afc0;
+    color: #fff;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    opacity: .8;
+}
+
+
+.Antalya-article h3{
+    font-size: 30px;
+    /* color: darkred; */
+    color: #144754;
+}
+.Antalya-paragraph{
+    color:#fff;
+}
+.Antalya-book{
+    position: absolute;
+    color: #144754;
+    border-radius: 30px;
+    border: 2px dashed #fff;
+    padding: 4% 8%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    bottom: 30px;
+    width: 30%;
+    right: 25%;
+    left: 25%;
+}
+                                        /* End Of Antalya */
+
+                                        /* Start Of Lungern */
+.Lungern-main{
+    background-color: blue;
+    height: 45%;
+    width: 25%;
+    right: 30%;
+    bottom: 0%;
+    position: absolute;
+}
+
+.Lungern-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.Lungern-article{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    background-color: #a0c437;
+    color: darkred;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    
+    opacity: 0;
+    
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.Lungern-article:hover{
+    position: absolute;
+    height: 100%;
+    /* background-color: #ef640b; */
+    /* background-color: #683514; */
+    /* background-color: #a0c437;; */
+    background-color: #6fa518;
+    color: #fff;
+    padding: 0 5px 0 20px;
+    font-size: 20px;
+    opacity: .8;
+}
+
+
+.Lungern-article h3{
+    font-size: 30px;
+    /* color: darkred; */
+    /* color: orangered; */
+    color: #051f38;
+}
+.Lungern-paragraph{
+    /* color: orange; */
+    /* color: #4d4047; */
+    color: #2c3d08;
+}
+.Lungern-book{
+    position: absolute;
+    color: #051f38;
+    border-radius: 30px;
+    border: 2px dashed #2c3d08;
+    padding: 4% 8%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    bottom: 30px;
+    width: 30%;
+    right: 25%;
+    left: 25%;
+}
+
+
+                                        /* End Of Lungern */
+
+                                        /* Start of Travelling Gallary*/
+
+.main-gallary{
+    display: inline;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 25%;
+
+}
+.Travelling-Gallary-Heading{
+    color: #2b4ac7;
+    width: 340%;
+    /* border: 2px solid #2b4ac7; */
+    right: -150px;
+    font-size: 50px;
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+}
+
+.Travelling-Gallary-Span{
+    background-color: #2b4ac7;
+    color: #fff;
+    padding: 5px;
+    
+}
+
+                                            /* Start of Sri Lanka */
+.Travelling-Gallary-SriLanka{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: 400px;
+
+    
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.Travelling-Gallary-SriLanka:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: 400px;
+    transform: scale(1.1);
+
+}
+
+.Travelling-Gallary-SriLanka-figure{
+    color: #fff;
+    width: 100px;
+    position: absolute;
+    left: 430px;
+    top: 100px;
+    z-index: 2;
+    font-size: larger;
+}
+                                            /* end of Sri Lanka */
+
+                                            /* star of Tokyo */
+.Travelling-Gallary-Tokyo{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: 100px;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-Tokyo:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: 100px;
+    transform: scale(1.1);
+}
+.Travelling-Gallary-Tokyo-figure{
+    color: #fff;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    z-index: 2;
+    font-size: larger;
+}
+
+
+                                            /* end of Tokyo */
+
+                                            /* star of Delhi */
+
+.Travelling-Gallary-Delhi{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: -200px;
+    z-index: 1;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-Delhi:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: -200px;
+    z-index: 1;
+    transform: scale(1.1);
+
+
+}
+.Travelling-Gallary-Delhi-figure{
+    color: #fff;
+    position: absolute;
+    left: -135px;
+    top: 100px;
+    z-index: 2;
+    font-size: larger;
+}
+
+                                            /* end of Delhi */
+
+
+                                            /* star of S-F */
+.Travelling-Gallary-S-F{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: -500px;
+    z-index: 1;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-S-F:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: -500px;
+    z-index: 1;
+    transform: scale(1.1);
+}
+.Travelling-Gallary-S-F-figure{
+    color: #fff;
+    position: absolute;
+    left: -470px;
+    top: 100px;
+    z-index: 2;
+    font-size: larger;
+}
+
+                                            /* end of S-F */
+
+
+                                            /* Start of Toronto */
+.Travelling-Gallary-Toronto{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: 400px;
+    top: 300px;
+
+    
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.Travelling-Gallary-Toronto:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: 400px;
+    transform: scale(1.1);
+
+}
+
+.Travelling-Gallary-Toronto-figure{
+    color: #fff;
+    width: 100px;
+    position: absolute;
+    left: 430px;
+    top: 400px;
+    z-index: 2;
+    font-size: larger;
+    
+}
+                                            /* end of Toronto */
+
+                                            /* star of Oslo */
+.Travelling-Gallary-Oslo{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: 100px;
+    top:300px;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-Oslo:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: 100px;
+    transform: scale(1.1);
+}
+.Travelling-Gallary-Oslo-figure{
+    color: #fff;
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    z-index: 2;
+    font-size: larger;
+}
+
+
+                                            /* end of Oslo */
+
+                                            /* star of Hong Kong */
+
+.Travelling-Gallary-HongKong{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: -200px;
+    z-index: 1;
+    top: 300px;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-HongKong:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: -200px;
+    z-index: 1;
+    transform: scale(1.1);
+
+
+}
+.Travelling-Gallary-HongKong-figure{
+    color: #fff;
+    position: absolute;
+    left: -135px;
+    top: 400px;
+    z-index: 2;
+    font-size: larger;
+}
+
+                                            /* end of Hong Kong */
+
+
+                                            /* star of Kuala Lumpur */
+.Travelling-Gallary-KualaLumpur{
+    border-radius: 10%;
+    height: 250px;
+    width: 250px;
+    display: inline;
+    position: absolute;
+    left: -500px;
+    z-index: 1;
+    top: 300px;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.Travelling-Gallary-KualaLumpur:hover{
+    border-radius: 10%;
+    height: 260px;
+    width: 260px;
+    display: inline;
+    position: absolute;
+    left: -500px;
+    z-index: 1;
+    transform: scale(1.1);
+}
+.Travelling-Gallary-KualaLumpur-figure{
+    color: #fff;
+    position: absolute;
+    left: -470px;
+    top: 400px;
+    z-index: 2;
+    font-size: larger;
+}
+
+                                            /* end of Kuala Lumpur */
+
+.Offers{
+    position: absolute;
+    width: 99%;
+    background-image: url("../images/backgrounds/second-image.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+    margin-top: 1100px;
+}
+
+.Offers-topic{
+    background-color: #000;
+    opacity: 0.6;
+    margin-top: 20%;
+    padding: 15px;
+    width: 70%;
+    
+}
+.Offers-paragraph{
+    color: #fff;
+}
+
+.Offers-paragraph2{
+    color: #fff;
+    
+}
+.Offers-Button{
+    text-decoration: none;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30%;
+    left: 400px;
+    margin-top: -30px;
+    padding: 3px;
+    margin-left: 30%;
+}
+
+.Airlines{
+    padding: 0 0 0 20px;
+    /* background-color: gainsboro; */
+    height: 500px;
+    width: 97.5%;
+    right: auto;
+    left: auto;
+    position: absolute;
+    margin-top: 1800px;
+
+}
+
+.AirlinesHeadding{
+    color: #2b4ac7;
+    font-size: 50px;
+    width: 46%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Airlines-span{
+    color: #fff;
+    background-color: #2b4ac7;
+    padding: 0 7px;
+}
+
+/* .QatarAirways-Span{
+    background-color: red;
+    width: 20px;
+    height: 90px;
+    top: 90px;
+    padding: 0;
+} */
+
+.QatarAirways-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    border-color: rebeccapurple;
+    border-width: 10px;
+    
+}
+
+/* Lufthansa */
+
+/* .Lufthansa-Span{
+    background-color: rgb(51, 0, 255);
+    width: 20px;
+    height: 50px;
+    top: 300px;
+    padding: 0;
+} */
+
+.Lufthansa-Logo{
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+}
+
+.Etihad-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+}
+
+.Turkish-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 450px;
+    top: 130px;
+    border-color: rebeccapurple;
+    border-width: 10px;
+}
+
+
+.AirFranch-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    border-color: rebeccapurple;
+    border-width: 10px;
+}
+
+.American-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 450px;
+    top: 400px;
+}
+
+.British-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 850px;
+    top: 130px;
+    border-color: rebeccapurple;
+    border-width: 10px;
+    
+}
+.Quantas-Logo{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 850px;
+    top: 250px;
+    border-color: rebeccapurple;
+    border-width: 10px;
+    
+}
+.KLM-Logo{
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    left: 850px;
+    top: 400px;
+}
+.Reviews{
+    /* background-color: #09a6d0; */
+    height: 450px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 300px; */
+    position: absolute;
+    top: 5700px;
+}
+.Reviews-heading{
+    color: #2b4ac7;
+    font-size: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.Reviews-heading-span{
+    color: #fff;
+    background-color: #2b4ac7;
+    padding: 5px;
+    border-radius: 2%;
+}
+.Reviews-Userone{
+    height: 320px;
+    width: 25%;
+    background-color: white;
+    border-radius: 2%;
+    border: 1px solid rgb(0 0 0 / 25%);
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+
+    position: absolute;
+    padding: 10px;
+
+    margin-left: 110px;
+    
+}
+.Reviews-Userone-image{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: absolute;
+    /* margin-left: -30px; */
+}
+.Alexaner-Eliot_Fig{
+    /* background-color: #051f38; */
+    left: 50px;
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    top: -20px;
+
+}
+.Alexaner-Eliot{
+    color: #2b4ac7;
+    /* background-color: #09a6d0; */
+    width: 200px;
+    /* left: 50px; */
+    /* position: absolute; */
+}
+.Alexaner-Eliot-Vancover{
+    color: #2b4ac7;
+}
+.Reviews-Userone-paragraph{
+    text-align: justify;
+    /* font-size: 10px; */
+    color: rgb(73 73 73);
+    margin-top: 100px;
+    border: 2px solid #2b4ac7;
+    /* font-size: 10px; */
+    border-color: #2b4ac7 transparent transparent transparent;
+    padding-top: 20px;
+}
+.Reviews-Userone-paragraph h3{
+    color: #2b4ac7;
+    position: absolute;
+}
+.Reviews-Usertow{
+    height: 320px;
+    width: 25%;
+    background-color: white;
+    border-radius: 2%;
+    border: 1px solid rgb(0 0 0 / 25%);
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+
+    position: absolute;
+    padding: 10px;
+    margin-left: 460px;
+}
+.Reviews-Usertow-span{
+    background-color:#2b4ac7;
+    position: absolute;
+    /* font-size: 200px; */
+    right: 10px;
+    top: 5px;
+    height: 100px;
+    width: 30px;
+}
+.Reviews-Userthree{
+    height: 320px;
+    width: 25%;
+    background-color: white;
+    border-radius: 2%;
+    border: 1px solid rgb(0 0 0 / 25%);
+    box-shadow: 0 7px 15px rgb(0 0 0 / 25%);
+
+    position: absolute;
+    padding: 10px;
+    margin-left: 810px;
+}
+
+
+
+
+                        /* Footer */
+footer{
+    /* padding-top: 100px; */
+    position: absolute;
+    background-color: #2b4ac7;
+    background-image: linear-gradient( #2b4ac7,#2b4ac7 ,#fff  );
+    width: 99%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250%;
+}
+
+.footer-ul1{
+    /* background-color: red; */
+    width: 300px;
+    top: 0;
+    margin-left: 72%;
+    position: absolute;
+    list-style: none;
+
+}
+
+.footer-ul1 li{
+    /* background-color: peru; */
+    width: 200px;
+    /* margin-right: auto; */
+    margin-left: 20%;
+    margin-top:20px;
+}
+
+.footer-ul1 a{
+    color: #fff;
+    width: 20px;
+    /* background-color: #09a6d0; */
+    text-decoration: none;
+    /* margin-left: 40%; */
+    text-align: left;
+}
+.footer-ul1-heading{
+    color: #fff;
+    font-size: 30px;
+    text-align: center ;
+    border: 2px solid #fff;
+    border-color: transparent transparent #fff  ;
+}
+
+
+
+.footer-ul2{
+    /* background-color: blue; */
+    width: 25%;
+    top: 0;
+    margin-left: 44.5%;
+    position: absolute;
+    list-style: none;
+
+}
+
+.footer-ul2 li{
+    /* background-color: peru; */
+    width: 200px;
+    /* margin-right: auto; */
+    margin-left: 20%;
+    margin-top:20px;
+}
+
+.footer-ul2 a{
+    color: #fff;
+    width: 20px;
+    /* background-color: #09a6d0; */
+    text-decoration: none;
+    /* margin-left: 40%; */
+    text-align: left;
+}
+.footer-ul2-heading{
+    color: #fff;
+    font-size: 30px;
+    text-align: center ;
+}
+
+
+.footer-ul3{
+    /* background-color: green; */
+    width: 25%;
+    top: 0;
+    margin-left: 17%;
+    position: absolute;
+    list-style: none;
+
+}
+
+.footer-ul3 li{
+    /* background-color: peru; */
+    width: 200px;
+    /* margin-right: auto; */
+    margin-left: 20%;
+    margin-top:20px;
+}
+
+.footer-ul3 a{
+    color: #fff;
+    width: 25%;
+    /* background-color: #09a6d0; */
+    text-decoration: none;
+    /* margin-left: 40%; */
+    text-align: left;
+}
+.footer-ul3-heading{
+    color: #fff;
+    font-size: 30px;
+    text-align: center ;
+}
+
+
+.Footer-Logo{
+    color: #fff;
+    background-color: transparent;
+    border: 2px double #fff;
+    border-radius: 15%;
+    text-align: center;
+    font-size: 30px;
+    width: 15%;
+    height: 200px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.Footer-Logo-paragraph{
+    color: #fff;
+    height: 20%;
+    font-size: 45px;
+    width: 20%;
+    margin-left: 30%;
+    /* background-color: #09a6d0; */
+}
+
+.copyright{
+    position: absolute;
+    color: #000;
+    text-align: center;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.developer{
+    bottom: 10px;
+}
+
+
+
+.holder{
+    height: 300px;
+    width: 300px;
+}
+.holder:hover img{
+    box-shadow:rgba(0, 0, 0, 0.4) 30px 30px 7px;
+    transform: scale(1.1);
+}
+.holder img{
+    height: 300px;
+    width: 300px;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+.last-h1{
+    color: rgb(102, 102, 102);
+    font-size: 100px;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    opacity: 1;
+}
+.last-h1:hover{
+    opacity: 0.7;
+    color: rgb(145, 131, 131);
+    font-size: 100px;
+    font-size: 130px;
+    text-shadow:rgba(0, 0, 0, 0.446) 50px 80px 15px;
+}
